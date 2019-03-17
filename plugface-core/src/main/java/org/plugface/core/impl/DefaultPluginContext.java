@@ -90,9 +90,9 @@ public class DefaultPluginContext implements PluginContext {
     public <T> void addPlugin(String name, T plugin) {
         Objects.requireNonNull(name, "Plugin name to register cannot be null");
         Objects.requireNonNull(plugin, "Plugin to register cannot be null");
-        if (registry.containsKey(name) || registry.containsValue(plugin)) {
-            throw new IllegalArgumentException("Plugin already registered");
-        }
+//        if (registry.containsKey(name) || registry.containsValue(plugin)) {
+//            throw new IllegalArgumentException("Plugin already registered");
+//        }
         registry.put(name, plugin);
     }
 
